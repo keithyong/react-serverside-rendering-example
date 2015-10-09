@@ -9,8 +9,8 @@ app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
     var reactHtml = ReactDOMServer.renderToString(ReactApp({}));
-
     res.render('index.jade', {reactOutput: reactHtml});
 });
 
 app.listen(7749);
+console.log('Type localhost:7749 to see app.')
