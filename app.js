@@ -1,4 +1,3 @@
-require('babel/register');
 var express = require('express');
 var React = require('react');
 var ReactApp = React.createFactory(require('./ReactApp.jsx'));
